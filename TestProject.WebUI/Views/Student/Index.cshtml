@@ -1,0 +1,35 @@
+﻿@model StudentViewModel
+
+<form asp-controller="Student" asp-action="Index" method="post">
+    <div class="form-group">
+        <label asp-for="PersonName">Ad</label>
+        <input type="text" asp-for="PersonName" class="form-control" placeholder="Ad" />
+        <span asp-validation-for="PersonName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UniverstyName">Üniversite</label>
+        <input type="text" asp-for="UniverstyName" class="form-control" placeholder="Üniversite" />
+        <span asp-validation-for="UniverstyName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EmailAddress">Eposta</label>
+        <input type="text" asp-for="EmailAddress" class="form-control" placeholder="Eposta" />
+        <span asp-validation-for="EmailAddress"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Degree">Derece</label>
+        <input type="text" asp-for="Degree" class="form-control" placeholder="Derece" />
+        <span asp-validation-for="Degree"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Adres</label>
+        <input type="text" asp-for="Address" class="form-control" placeholder="Adres" />
+        <span asp-validation-for="Address"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Telefon</label>
+        <input type="text" asp-for="PhoneNumber" class="form-control" placeholder="Telefon" />
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+    <input type="submit" value="Kaydet" class="btn btn-success btn-group-sm" />
+</form>
